@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya - Pinky Space</title>
+    <style>
+        /* CSS INTERNAL */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5; /* Lavender Blush */
+            color: #4a4a4a;
+        }
+
+        header {
+            background-color: #ffb6c1; /* Light Pink */
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffc0cb;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6d4c41;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: 0.3s;
+            font-size: 0.9em;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Foto Profil Lingkaran */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffb6c1;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #db7093;
+            text-align: center;
+            border-bottom: 2px solid #ffe4e1;
+            padding-bottom: 10px;
+        }
+
+        /* Styling Tabel Biodata */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table tr td {
+            padding: 15px;
+            border-bottom: 1px solid #fff0f5;
+        }
+
+        table tr td:first-child {
+            font-weight: bold;
+            color: #db7093;
+            width: 35%;
+        }
+
+        .skills {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #ffe4e1;
+            color: #db7093;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #db7093;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profil Pribadi</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="galeri-foto.html">Foto</a>
+        <a href="galeri-video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150/ffb6c1/ffffff?text=Foto+Profil" alt="Foto Profil" class="profile-img">
+            <h2>Tentang Saya</h2>
+        </div>
+
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>Nama Lengkap Anda</td>
+            </tr>
+            <tr>
+                <td>Tempat, Tgl Lahir</td>
+                <td>Kota, 01 Januari 2000</td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>Perempuan / Laki-laki</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Jl. Mawar Indah No. 123, Indonesia</td>
+            </tr>
+            <tr>
+                <td>Pendidikan</td>
+                <td>Universitas Informatika (S1)</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>halo@emailanda.com</td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>Membaca, Koding, Menonton Film</td>
+            </tr>
+        </table>
+
+        <h2 style="margin-top: 40px;">Keahlian</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML & CSS</span>
+            <span class="skill-tag">UI Design</span>
+            <span class="skill-tag">Photography</span>
+            <span class="skill-tag">Public Speaking</span>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Design with ❤️ by [Nama Anda]
+    </footer>
+
+</body>
+</html>

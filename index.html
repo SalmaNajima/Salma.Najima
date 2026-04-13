@@ -67,21 +67,25 @@
             color: #666;
         }
         
-        /* Tombol Utama (digunakan untuk Biodata dan Tugas 2) */
+        /* TOMBOL PINK YANG DIPAKSA (anti override GitHub) */
         .btn-start {
             display: inline-block;
             margin: 15px 10px;
             padding: 12px 30px;
-            background-color: #ffb6c1;     /* Warna pink sama */
-            color: white;
-            text-decoration: none;
+            background-color: #ffb6c1 !important;
+            color: white !important;
+            text-decoration: none !important;
             border-radius: 25px;
             font-weight: bold;
-            transition: background 0.3s;
-            font-size: 1em;
+            font-size: 1.05em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        
         .btn-start:hover {
-            background-color: #db7093;
+            background-color: #db7093 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
         footer {
@@ -109,11 +113,8 @@
             <p>Halo! Senang sekali Anda berkunjung. Ini adalah website pribadi saya yang dirancang dengan sentuhan warna pink muda yang lembut dan ceria.</p>
             <p>Di sini Anda bisa mengenal saya lebih jauh, melihat koleksi foto kenangan, hingga menonton video-video favorit saya. Silakan jelajahi setiap menu yang tersedia!</p>
             
-            <!-- Tombol Biodata -->
             <a href="biodata.html" class="btn-start">Lihat Biodata Saya</a>
-            
-            <!-- Tombol Tugas 2 (warna dan bentuk sama persis) -->
-            <a href="tugas2.html" class="https://salmanajima.github.io/Salma-Najima/">Tugas 2</a>
+            <a href="tugas2.html" class="https://salmanajima.github.io/Salma-Najima/">Tugas 2 Saya</a>
             
         </section>
     </div>

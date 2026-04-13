@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - My Pink Web</title>
     <style>
-        /* CSS INTERNAL */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -66,9 +65,9 @@
             font-size: 1.1em;
             color: #666;
         }
-        
-        /* TOMBOL PINK YANG DIPAKSA (anti override GitHub) */
-        .btn-start {
+
+        /* === TOMBOL PINK UTAMA (sama untuk Biodata dan Tugas 2) === */
+        .btn-pink {
             display: inline-block;
             margin: 15px 10px;
             padding: 12px 30px;
@@ -79,13 +78,19 @@
             font-weight: bold;
             font-size: 1.05em;
             transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        
-        .btn-start:hover {
+
+        .btn-pink:hover {
             background-color: #db7093 !important;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Reset paksa link GitHub supaya tidak biru */
+        a:link, a:visited, a:active {
+            color: inherit !important;
+            text-decoration: none !important;
         }
 
         footer {
@@ -113,8 +118,11 @@
             <p>Halo! Senang sekali Anda berkunjung. Ini adalah website pribadi saya yang dirancang dengan sentuhan warna pink muda yang lembut dan ceria.</p>
             <p>Di sini Anda bisa mengenal saya lebih jauh, melihat koleksi foto kenangan, hingga menonton video-video favorit saya. Silakan jelajahi setiap menu yang tersedia!</p>
             
-            <a href="biodata.html" class="btn-start">Lihat Biodata Saya</a>
-            <a href="tugas2.html" class="https://salmanajima.github.io/Salma-Najima/">Tugas 2 Saya</a>
+            <!-- Tombol Biodata -->
+            <a href="biodata.html" class="btn-pink">Lihat Biodata Saya</a>
+            
+            <!-- Tombol Tugas 2 (warna & bentuk SAMA PERSIS) -->
+            <a href="https://salmanajima.github.io/Salma-Najima/" class="btn-pink">Tugas 2</a>
             
         </section>
     </div>
